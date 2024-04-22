@@ -1,0 +1,58 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 5vh auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.wrapper .tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .tabs__header {
+  flex: 1;
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  text-align: center;
+}
+.wrapper .tabs__header:hover {
+  background-color: whitesmoke;
+}
+.wrapper .tabs__header:first-of-type {
+  border-radius: 9px 0 0 0;
+}
+.wrapper .tabs__header:last-of-type {
+  border-radius: 0 9px 0 0;
+}
+.wrapper .tabs__header:not(:last-of-type) {
+  border-right: 1px solid lightgray;
+}
+.wrapper .tabs__trigger {
+  all: unset;
+}
+.wrapper .tabs__trigger:checked + label {
+  background-color: lightgray;
+  border-bottom: 0;
+}
+.wrapper .tabs__trigger[id=tab1]:checked ~ .tabs__content:nth-of-type(1), .wrapper .tabs__trigger[id=tab2]:checked ~ .tabs__content:nth-of-type(2), .wrapper .tabs__trigger[id=tab3]:checked ~ .tabs__content:nth-of-type(3) {
+  flex-basis: 100%;
+  display: flex;
+}
+.wrapper .tabs__content {
+  display: none;
+  padding: 15px;
+}
+.audio__content {
+  align-items: center;
+  width: 100%;
+}
+
+.video__content {
+  width: 100%;
+}
+
+.map__content {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

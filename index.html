@@ -7,23 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HomeTask#8</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.scss">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="tabs">
-            <div class="tabs__header">
-                <label for="tab1">Tab 1</label>
-                <input checked type="checkbox" id="tab1">
-                <label for="tab2">Tab 2</label>
-                <input type="checkbox" id="tab2">
-                <label for="tab3">Tab 3</label>
-                <input type="checkbox" id="tab3">
+            <input checked class="tabs__trigger" type="radio" id="tab1" name="tab">
+            <label class="tabs__header" for="tab1">audio</label>
+            <input class="tabs__trigger" type="radio" id="tab2" name="tab">
+            <label class="tabs__header" for="tab2">video</label>
+            <input class="tabs__trigger" type="radio" id="tab3" name="tab">
+            <label class="tabs__header" for="tab3">map</label>
+            <div class="tabs__content audio">
+                <audio class="audio__content" controls src="./audio/Queen-We_are_the_champions-world74.spcs.bio.mp3"></audio>
             </div>
-            <div class="tabs__content">
-                <div class="tabs__content-item"></div>
-                <div class="tabs__content-item"></div>
-                <div class="tabs__content-item"></div>
+            <div class="tabs__content video">
+                <video class="video__content" controls src="./video/855401-uhd_3840_2160_25fps.mp4" ></video>
+            </div>
+            <div class="tabs__content map">
+                <iframe class="map__content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5444004.04942462!2d25.892536133893127!3d48.22192505435655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDRl9C90LA!5e0!3m2!1suk!2sua!4v1713766041821!5m2!1suk!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
